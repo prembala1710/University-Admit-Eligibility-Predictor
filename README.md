@@ -20,6 +20,9 @@ By the end of this project, You’ll be able to understand :
 -      Evaluation Metrics
 -      How to Build a Web Application using the Flask Framework
 
+###      :mortar_board: Technical Architecture:
+![Technical Architecture](https://user-images.githubusercontent.com/83074315/191613193-170be0e9-776b-4aea-9139-047ade78c7b2.png)
+
 ###      :mortar_board: Tasks:
         _ Assignments
           _ Assignment 1
