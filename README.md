@@ -24,11 +24,11 @@ By the end of this project, You’ll be able to understand :
 ![Technical Architecture](https://user-images.githubusercontent.com/83074315/191613193-170be0e9-776b-4aea-9139-047ade78c7b2.png)
 
 ###      :mortar_board: Tasks:
-_ Assignments
- _ Assignment 1
-_ Project Design & Planning
- _ Problem Statement
- _ Literature Survey
- _ Empathy Map
- _ Brainstorming and Idea Prioritization
- _ Top 3 Ideas of Brainstorming
+- Assignments
+  - Assignment 1
+- Project Design & Planning
+  - Problem Statement
+  - Literature Survey
+  - Empathy Map
+  - Brainstorming and Idea Prioritization
+  - Top 3 Ideas of Brainstorming
