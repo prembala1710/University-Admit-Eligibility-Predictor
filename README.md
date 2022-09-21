@@ -27,5 +27,5 @@ By the end of this project, You’ll be able to understand :
           _ Problem Statement
           _ Literature Survey
           _ Empathy Map
-          _ Brainstrorming and Idea Prioritization
+          _ Brainstorming and Idea Prioritization
           _ Top 3 Ideas of Brainstorming
