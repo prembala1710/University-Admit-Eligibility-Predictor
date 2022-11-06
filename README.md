@@ -26,9 +26,27 @@ By the end of this project, You’ll be able to understand :
 ###      :mortar_board: Tasks:
 - Assignments
   - Assignment 1
+  - Assignment 2
+  - Assignment 3
+  - Assignment 4
 - Project Design & Planning
-  - Problem Statement
-  - Literature Survey
-  - Empathy Map
-  - Brainstorming and Idea Prioritization
-  - Top 3 Ideas of Brainstorming
+  - Ideation Phase
+    - Problem Statement
+    - Literature Survey
+    - Empathy Map
+    - Brainstorming and Idea Prioritization
+  - Project Design Phase 1
+    - Proposed Solution
+    - Problem Solution Fit
+    - Solution Architecture
+  - Project Design Phase 2
+    - Customer Journey Map
+    - Data Flow Diagram and User Stories
+    - Solution Architecture
+    - Technology Stack
+  - Project Planning Phase
+    - Milestones and Activity List
+    - Sprint Delivery Plan
+- Project Development Phase
+  - Delivery of Sprint 1
+  - Delivery of Sprint 2
