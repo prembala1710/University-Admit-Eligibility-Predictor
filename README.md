@@ -45,8 +45,9 @@ By the end of this project, You’ll be able to understand :
     - Solution Architecture
     - Technology Stack
   - Project Planning Phase
-    - Milestones and Activity List
+    - Milestones and Activities List
     - Sprint Delivery Plan
 - Project Development Phase
   - Delivery of Sprint 1
   - Delivery of Sprint 2
+  - Delivery of Sprint 3
