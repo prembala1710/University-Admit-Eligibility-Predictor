@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="spreadsheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+    <title>University Admit Eligibility Predictor</title>
+</head>
+<body>
+    <h1>University Admit Eligibility Predictor</h1>
+    <form method="POST" action="/predict">
+        <p>GRE Score</p>
+        <input type="number" name="GREScore" min="260" max="340" required/>
+        <p>TOEFL Score</p>
+        <input type="number" name="TOEFLScore" min="0" max="120" required/>
+        <p>University Rating</p>
+        <input type="number" name="UnivRating" min="1" max="5" required/>
+        <p>SOP</p>
+        <input type="number" name="SOP" min="1" max="5" step="0.5" required/>
+        <p>LOR</p>
+        <input type="number" name="LOR" min="1" max="5" step="0.5" required/>
+        <p>CGPA</p>
+        <input type="number" name="CGPA" min="5" max="10" step="0.01" required/>
+        <p>Research Status</p>
+        <label name="ResearchText"><input type="checkbox" name="Research" value='done'/>Completed a Research</label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
