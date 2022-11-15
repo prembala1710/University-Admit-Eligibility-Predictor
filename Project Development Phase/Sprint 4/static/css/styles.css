@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+#projName
+{
+    text-align: center;
+}
+
+.inputBox
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputLabel
+{
+    width: 15em;
+    text-shadow: 0 0 2em black;
+}
+
+.inputField
+{
+    width: 5em;
+    height: 2em;
+    font-size: x-large;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 2rem;
+    padding: 0 .1em 0 1em;
+    border: .1em solid black;
+    box-shadow: .25em .25em .25em grey;
+}
+
+.inputField[type = 'checkbox']
+{
+    box-shadow: none;
+}
+
+#submitButton
+{
+    height: 2em;
+    width: 10em;
+    background-color: rgb(75, 75, 255);
+    padding: 0;
+    color: #fff;
+}
+
+#submitButton:hover
+{
+    cursor: pointer;
+    background-color: blue;
+}
+
+.emptyDiv
+{
+    width: 15em;
+}
+
+#eligibilityForm
+{
+    width: 25em;
+    font-size: x-large;
+}
+
+#pageSection
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 2em black;
+}
+
+.returnForm
+{
+    display: flex;
+    align-items: center;
+}
+
+#probability , #comment
+{
+    font-size: 300%;
+    text-shadow: 0 0 1em black, 3px 3px 3px black, -3px 3px 3px black, 3px -3px 3px black , -3px -3px 3px black;
+}
