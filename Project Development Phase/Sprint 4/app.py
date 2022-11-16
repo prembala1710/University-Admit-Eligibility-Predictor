@@ -3,7 +3,8 @@ from flask import Flask, render_template, request
 from flask_cors import CORS
 import requests
 
-API_KEY = "0cJXVMJod7os4JhIiWZORtvpfuoRr8aPtQMSthvh76hb"
+# NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account.
+API_KEY = "PLACE THE API KEY HERE"       
 
 token_response = requests.post("https://iam.cloud.ibm.com/identity/token",data = {
     "apikey":API_KEY , "grant_type":"urn:ibm:params:oauth:grant-type:apikey"
@@ -47,7 +48,7 @@ def PredictPossibility():
     # NOTE: manually define and pass the array(s) of values to be scored in the next line
     payload_scoring = {"input_data": [{"fields": [["GREScore","TOEFLScore","UnivRating","SOP","LOR","CGPA","Research"]], "values": X}]}
     response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/1b254abd-eaec-4f59-9e86-a3674f3eea4c/predictions?version=2022-11-15', json=payload_scoring,
-    headers={'Authorization': 'Bearer ' + mltoken})
+    headers=header)
     print("Scoring response")
     print(response_scoring.json())
     probability = int(round((response_scoring.json()["predictions"][0]["values"][0][0]),2)*100)
