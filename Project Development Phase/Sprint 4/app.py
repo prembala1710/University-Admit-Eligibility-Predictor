@@ -27,9 +27,12 @@ def add_header(response):
 
 CORS(app)
 
-@app.route('/',methods=['GET'])
+@app.route('/',methods=['GET','POST'])
 def sendHomePage():
-    return render_template('index.html')
+    if(request.method == "GET"):
+        return render_template('index.html' , notification = 'Welcome!')
+    else:
+        return render_template('index.html' , notification = 'You have given ' + request.form['rating'] + ' Stars Feedback')
 
 @app.route('/predict',methods=['POST'])
 def PredictPossibility():

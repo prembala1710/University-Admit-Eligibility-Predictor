@@ -8,31 +8,34 @@
     <title>University Admit Eligibility Predictor</title>
 </head>
 <body>
+    <div id="notification" >
+        <p id="message">{{notification}}</p>
+    </div>
     <h1 id="projName">University Admit Eligibility Predictor</h1>
     <form id="eligibilityForm" method="POST" action="/predict">
         <div class="inputBox">
             <p class="inputLabel">GRE Score</p>
-            <input class="inputField" type="number" name="GREScore" min="260" max="340" value="340" placeholder="260-340" required/>
+            <input class="inputField" type="number" name="GREScore" min="260" max="340" placeholder="260-340" required/>
         </div>
         <div class="inputBox">
             <p class="inputLabel">TOEFL Score</p>
-            <input class="inputField" type="number" name="TOEFLScore" min="0" max="120" value="120" placeholder="0-120" required/>        
+            <input class="inputField" type="number" name="TOEFLScore" min="0" max="120" placeholder="0-120" required/>        
         </div>
         <div class="inputBox">
             <p class="inputLabel">University Rating</p>
-            <input class="inputField" type="number" name="UnivRating" min="0" max="5" value="5" placeholder="0-5" required/>
+            <input class="inputField" type="number" name="UnivRating" min="0" max="5" placeholder="0-5" required/>
         </div>
         <div class="inputBox">
             <p class="inputLabel">Statement of Purpose</p>
-            <input class="inputField" type="number" name="SOP" min="0" max="5" step="0.5" value="5" placeholder="0-5" required/>
+            <input class="inputField" type="number" name="SOP" min="0" max="5" step="0.5" placeholder="0-5" required/>
         </div>
         <div class="inputBox">
             <p class="inputLabel">Letter of Recommendation</p>
-            <input class="inputField" type="number" name="LOR" min="0" max="5" step="0.5" value="5" placeholder="0-5" required/>
+            <input class="inputField" type="number" name="LOR" min="0" max="5" step="0.5" placeholder="0-5" required/>
         </div>
         <div class="inputBox">
             <p class="inputLabel">CGPA</p>
-            <input class="inputField" type="number" name="CGPA" min="5" max="10" step="0.01" value="10" placeholder="0-10" required/>
+            <input class="inputField" type="number" name="CGPA" min="5" max="10" step="0.01" placeholder="0-10" required/>
         </div>
         <div class="inputBox">
             <p class="inputLabel">Completed a Research</p>
@@ -43,5 +46,6 @@
             <button id="submitButton" class="inputField" type="submit">Submit</button>
         </div>
     </form>
+    <script src="{{ url_for('static',filename='js/index.js' )}}" ></script>
 </body>
 </html>

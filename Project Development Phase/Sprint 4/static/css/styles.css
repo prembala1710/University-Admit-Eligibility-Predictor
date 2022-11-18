@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
 #projName
 {
@@ -43,16 +44,17 @@ body {
     box-shadow: none;
 }
 
-#submitButton
+#submitButton , #feedbackSubmit
 {
     height: 2em;
     width: 10em;
     background-color: rgb(75, 75, 255);
     padding: 0;
     color: #fff;
+    margin: 1em;
 }
 
-#submitButton:hover
+#submitButton:hover , #feedbackSubmit:hover
 {
     cursor: pointer;
     background-color: blue;
@@ -88,4 +90,58 @@ body {
 {
     font-size: 300%;
     text-shadow: 0 0 1em black, 3px 3px 3px black, -3px 3px 3px black, 3px -3px 3px black , -3px -3px 3px black;
+    margin: 0 0 2rem 0;
+}
+
+input[type=radio]
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    box-shadow: 0 0 0 black;
+}
+input[type=radio]+span
+{
+    cursor: pointer;
+}
+
+input[type=radio]:checked+span {
+    box-shadow: 0 0 0.5em black;
+}
+
+#notification
+{
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    height: 0;
+    opacity: 0;
+    animation-name: Notification;
+    animation-duration: 3s;
+}
+
+#message
+{
+    width: 100vw;
+    font-weight: bolder;
+}
+
+@keyframes Notification {
+    0% {height: 0;}
+    1% {opacity: 1;}
+    10% {height: 3em;}
+    90% {height: 3em;}
+    99% {opacity: 1;}
+    100% {height: 0;opacity: 0;}
+}
+
+#feedbackEmoji
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem ;
 }
