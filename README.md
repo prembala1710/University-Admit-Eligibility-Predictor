@@ -5,6 +5,8 @@
 ### :mortar_board: Team Leader : Prem B
 ### :mortar_board: Team Members : Akash S , Chandan Kumar A K , Naveen D
 
+### :mortar_board: Video Link : [Click Here to view the Youtube Video](https://youtu.be/xIi0kMbOEBI)
+
 ###      :mortar_board: Project Description:
 In this Project we will be building a University Admit Eligibility Predictor which will be able to
 -      Predict the Possibilities of a Student to Apply to a Specific University
@@ -51,3 +53,5 @@ By the end of this project, You’ll be able to understand :
   - Delivery of Sprint 1
   - Delivery of Sprint 2
   - Delivery of Sprint 3
+  - Delivery of Sprint 4
+- Final Delivery
